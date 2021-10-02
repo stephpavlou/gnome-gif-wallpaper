@@ -18,7 +18,7 @@ This command can be undone with
 ```
 gsettings set org.gnome.desktop.interface enable-animations true
 ```
-Then clone this repository
+Next, clone this repository
 ```
 git clone https://github.com/stephpavlou/gnome-gif-wallpaper
 ```
@@ -33,3 +33,6 @@ At this point, you should be able to test out the script like so
 Note that the '/absolute/path/to/gif' value should not be the path to a .gif file, but rather a directory holding the individual FRAMES of a gif you would like to use as a live wallpaper. This can be done easily using the online tool https://ezgif.com/split. The '0.04s' value should be the time the script should sleep in between frames. This will be different for every gif.
 
 Some gifs are provided as examples; these can be found in the 'gif' directory.
+
+### Issues
+- I have noticed that there is a black flashing effect when you first run the script, which seems to resolve itself after the first loop through all frames of the gif.

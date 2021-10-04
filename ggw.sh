@@ -16,7 +16,6 @@ gif_path=$1
 sleep_time=$2
 
 num_frames=$(ls $gif_path -1q | wc -l)
-echo $num_frames
 
 counter=1
 while true
@@ -25,7 +24,6 @@ do
 	then
 		counter=1
 	fi
-	echo $counter
 
 	file_to_display=$(ls $gif_path | awk "NR==$counter")
 	gsettings set org.gnome.desktop.background picture-uri "file:///$gif_path/$file_to_display" 
